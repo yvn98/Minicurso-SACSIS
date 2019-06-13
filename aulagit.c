@@ -14,9 +14,18 @@ int sub(int x, int y){
 	resultado = x-y;
 }
 
-int main(){
-	printf("Soma: %d",soma(2,4));
-	printf("\nSubtracao: %d",sub(7,4));
+int multi(int x, int y){
+	int resultado;
 	
+	resultado = x*y;
+}
+
+int main(){
+	int x=9, y=2;
+	
+	printf("%d+%d = %d",x,y,soma(x,y));
+	printf("\n%d+%d = %d",x,y,sub(x,y));
+	printf("\n%dx%d = %d",x,y,multi(x,y));
+		
 	return 0;
 }
