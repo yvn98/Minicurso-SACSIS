@@ -18,13 +18,17 @@ int multi(int x, int y){
 }
 
 int divi(int x, int y){
-	int resultado;
+	int resultado=0;
+	if(y==0){
+		printf(" Nao pode ser dividido por 0.");
+		return resultado;
+	}
 	resultado = x/y;
 	return resultado;
 }
 
 int main(){
-	int x=9, y=2;
+	int x=9, y=0;
 	
 	printf("%d+%d = %d",x,y,soma(x,y));
 	printf("\n%d+%d = %d",x,y,sub(x,y));
